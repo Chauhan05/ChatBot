@@ -1,4 +1,4 @@
-package com.example.chatbot
+package com.example.chatbot.navigation
 
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.animation.fadeIn
@@ -7,6 +7,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
+import com.example.chatbot.viewmodels.AppViewModel
+import com.example.chatbot.viewmodels.OcrViewModel
+import com.example.chatbot.screens.ChatPage
+import com.example.chatbot.screens.HomeScreenPage
+import com.example.chatbot.screens.OcrScreenPage
 import com.google.accompanist.navigation.animation.AnimatedNavHost
 import com.google.accompanist.navigation.animation.composable
 
@@ -18,7 +23,7 @@ fun AppNavHost(
     AppViewModel: AppViewModel
 ) {
 
-    val OcrViewModel: OcrViewModel= viewModel()
+    val OcrViewModel: OcrViewModel = viewModel()
 
     AnimatedNavHost(
         navController = navHostController,
@@ -29,7 +34,7 @@ fun AppNavHost(
             enterTransition = { fadeIn() },
             exitTransition = { fadeOut() }
         ) {
-            HomeScreenPage(modifier,AppViewModel,navHostController)
+            HomeScreenPage(modifier, AppViewModel, navHostController)
         }
 
         composable(

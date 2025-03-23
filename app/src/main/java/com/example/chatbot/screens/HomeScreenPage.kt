@@ -52,7 +52,7 @@
 //
 
 
-package com.example.chatbot
+package com.example.chatbot.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -81,9 +81,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
+import com.example.chatbot.viewmodels.AppViewModel
+import com.example.chatbot.navigation.NavigationItem
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -251,9 +255,9 @@ fun HomeScreenPage(
 fun FeatureCard(
     title: String,
     description: String,
-    icon: androidx.compose.ui.graphics.vector.ImageVector,
-    containerColor: androidx.compose.ui.graphics.Color,
-    contentColor: androidx.compose.ui.graphics.Color,
+    icon: ImageVector,
+    containerColor: Color,
+    contentColor: Color,
     modifier: Modifier = Modifier,
     onClick: () -> Unit
 ) {

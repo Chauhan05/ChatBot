@@ -21,7 +21,9 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.chatbot.navigation.AppNavHost
 import com.example.chatbot.ui.theme.ChatBotTheme
+import com.example.chatbot.viewmodels.AppViewModel
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
 
 class MainActivity : ComponentActivity() {

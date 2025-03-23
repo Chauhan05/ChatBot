@@ -25,7 +25,7 @@
 //import androidx.compose.ui.text.style.TextAlign
 //import androidx.compose.ui.unit.dp
 //import coil.compose.rememberImagePainter
-//import com.example.chatbot.OcrViewModel
+//import com.example.chatbot.viewmodels.OcrViewModel
 //
 //@Composable
 //fun OcrScreenPage(modifier: Modifier = Modifier, viewModel: OcrViewModel) {
@@ -124,7 +124,7 @@
 //import androidx.compose.ui.text.style.TextAlign
 //import androidx.compose.ui.unit.dp
 //import coil.compose.rememberImagePainter
-//import com.example.chatbot.OcrViewModel
+//import com.example.chatbot.viewmodels.OcrViewModel
 //
 //@Composable
 //fun OcrScreenPage(modifier: Modifier = Modifier, viewModel: OcrViewModel) {
@@ -1081,7 +1081,7 @@
 //}
 
 
-package com.example.chatbot
+package com.example.chatbot.screens
 
 import android.net.Uri
 import android.provider.MediaStore
@@ -1153,6 +1153,7 @@ import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import coil.compose.SubcomposeAsyncImage
+import com.example.chatbot.viewmodels.OcrViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 

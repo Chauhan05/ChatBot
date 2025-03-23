@@ -1,4 +1,4 @@
-package com.example.chatbot
+package com.example.chatbot.navigation
 
 enum class Screen{
     HOME,   //-> ALl the tabs
