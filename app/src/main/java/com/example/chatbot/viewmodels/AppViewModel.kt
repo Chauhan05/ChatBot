@@ -6,6 +6,7 @@ import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.chatbot.BuildConfig
 import com.example.chatbot.data.Constants
 import com.example.chatbot.data.MessageModel
 import com.google.ai.client.generativeai.GenerativeModel
@@ -31,7 +32,7 @@ class AppViewModel : ViewModel() {
     // Initialize Gemini model
     val model = GenerativeModel(
         modelName = "gemini-1.5-flash-001",
-        apiKey = Constants.apiKey,
+        apiKey = BuildConfig.GEMINI_API_KEY,
         generationConfig = generationConfig {
             temperature = 0.15f
             topK = 32
