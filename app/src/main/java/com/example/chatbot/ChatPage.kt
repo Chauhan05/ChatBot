@@ -206,6 +206,7 @@ fun ChatPage(modifier: Modifier = Modifier, viewModel: AppViewModel) {
                 listState = listState,
                 isTyping = isTyping
             )
+
             MessageInput(
                 input = inputValue,
                 onInputChange = { viewModel.updateInput(it) },
@@ -484,19 +485,19 @@ fun MessageInput(
             }
 
             // Character counter
-            if (characterCount > 0) {
-                Spacer(modifier = Modifier.height(4.dp))
-                Text(
-                    text = "$characterCount/$maxCharacterCount",
-                    style = MaterialTheme.typography.labelSmall,
-                    color = if (isNearLimit)
-                        MaterialTheme.colorScheme.error
-                    else
-                        MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f),
-                    textAlign = TextAlign.End,
-                    modifier = Modifier.fillMaxWidth()
-                )
-            }
+//            if (characterCount > 0) {
+//                Spacer(modifier = Modifier.height(4.dp))
+//                Text(
+//                    text = "$characterCount/$maxCharacterCount",
+//                    style = MaterialTheme.typography.labelSmall,
+//                    color = if (isNearLimit)
+//                        MaterialTheme.colorScheme.error
+//                    else
+//                        MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f),
+//                    textAlign = TextAlign.End,
+//                    modifier = Modifier.fillMaxWidth()
+//                )
+//            }
         }
     }
 }
