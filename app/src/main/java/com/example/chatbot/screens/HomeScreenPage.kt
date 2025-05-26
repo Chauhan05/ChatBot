@@ -1,55 +1,4 @@
-//package com.example.chatbot
-//
-//import androidx.compose.foundation.layout.Box
-//import androidx.compose.foundation.layout.Spacer
-//import androidx.compose.foundation.layout.fillMaxSize
-//import androidx.compose.foundation.layout.height
-//import androidx.compose.foundation.layout.padding
-//import androidx.compose.material3.Button
-//import androidx.compose.material3.Text
-//import androidx.compose.runtime.Composable
-//import androidx.compose.ui.Alignment
-//import androidx.compose.ui.Modifier
-//import androidx.compose.ui.unit.dp
-//import androidx.navigation.NavHostController
-//
-//@Composable
-//fun HomeScreenPage(
-//    modifier: Modifier = Modifier,
-//    viewModel: AppViewModel,
-//    navController: NavHostController
-//) {
-//    Box(
-//        modifier.fillMaxSize(),
-//        contentAlignment = Alignment.Center
-//    ) {
-//        Button(
-//            onClick = {
-//                navController.navigate(NavigationItem.ChatBotScreen.route) {
-//                    popUpTo(navController.graph.startDestinationId) { inclusive = false }
-//                    launchSingleTop = true
-//                    restoreState = true
-//                }
-//            }
-//        ) {
-//            Text("ChatBot")
-//        }
-//        Button(
-//            onClick = {
-//                navController.navigate(NavigationItem.OcrScreen.route) {
-//                    popUpTo(navController.graph.startDestinationId) { inclusive = false }
-//                    launchSingleTop = true
-//                    restoreState = true
-//                }
-//            },
-//            modifier= Modifier.padding(top=160.dp)
-//        ) {
-//            Text("Ocr Screen")
-//
-//        }
-//    }
-//}
-//
+
 
 
 package com.example.chatbot.screens
@@ -96,22 +45,6 @@ fun HomeScreenPage(
     viewModel: AppViewModel,
     navController: NavHostController
 ) {
-//    Scaffold(
-//        topBar = {
-//            CenterAlignedTopAppBar(
-//                title = {
-//                    Text(
-//                        "AI Assistant",
-//                        style = MaterialTheme.typography.titleLarge
-//                    )
-//                },
-//                colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
-//                    containerColor = MaterialTheme.colorScheme.primaryContainer,
-//                    titleContentColor = MaterialTheme.colorScheme.onPrimaryContainer
-//                )
-//            )
-//        }
-//    ) { paddingValues ->
     Column(
         modifier = modifier
             .fillMaxSize()
